@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal de Progrès</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; }
+        h1 { text-align: center; }
+        #post-form { margin-bottom: 20px; }
+        .post { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .date { font-size: 0.8em; color: gray; }
+    </style>
+</head>
+<body>
+    <h1>Journal de Progrès</h1>
+    <div id="post-form">
+        <input type="text" id="title" placeholder="Titre" required>
+        <textarea id="content" placeholder="Votre texte..." required></textarea>
+        <button onclick="addPost()">Ajouter</button>
+    </div>
+    <div id="posts"></div>
+    
+    <script>
+        function addPost() {
+            let title = document.getElementById("title").value;
+            let content = document.getElementById("content").value;
+            if (title.trim() === "" || content.trim() === "") return;
+            
+            let postContainer = document.getElementById("posts");
+            let post = document.createElement("div");
+            post.className = "post";
+            
+            let date = new Date().toLocaleString();
+            post.innerHTML = `<h3>${title}</h3><p>${content}</p><div class='date'>Posté le ${date}</div>`;
+            
+            postContainer.prepend(post);
+            document.getElementById("title").value = "";
+            document.getElementById("content").value = "";
+        }
+    </script>
+</body>
+</html>
