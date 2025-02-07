@@ -3,109 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Projet Personnel</title>
+    <title>Projet Personnel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+        .container {
+            padding: 50px;
         }
-        nav {
-            margin: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            margin-top: 20px;
         }
-        nav a:hover {
-            color: #007BFF;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        article {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        article:last-child {
-            border-bottom: none;
-        }
-        h2 {
-            color: #007BFF;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Mon Projet Personnel</h1>
-        <p>Mes avancées et découvertes</p>
-    </header>
-
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#chrono">Chronologie</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="accueil">
-        <h2>Présentation du Projet</h2>
-        <p>Bienvenue sur mon site dédié à mon projet personnel. Ce projet s'inscrit dans le cadre de mon TIPE en MP2I au lycée Thiers. Il porte sur [décrivez brièvement votre projet ici].</p>
-        <p>Sur ce site, vous pourrez suivre mes avancées, mes découvertes et les étapes clés de mon travail. Consultez la section <a href="#chrono">Chronologie</a> pour voir les dernières mises à jour.</p>
-    </section>
-
-    <section id="chrono">
-        <h2>Chronologie des Avancées</h2>
-        
-        <article>
-            <h3>Post 1 - Titre de l'avancée</h3>
-            <p>Date: 10 octobre 2023</p>
-            <p>Description de ce que j'ai accompli aujourd'hui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus nec nisi tincidunt tincidunt.</p>
-        </article>
-
-        <article>
-            <h3>Post 2 - Titre de l'avancée</h3>
-            <p>Date: 9 octobre 2023</p>
-            <p>Description de ce que j'ai accompli hier. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus nec nisi tincidunt tincidunt.</p>
-        </article>
-
-        <!-- Ajoute plus d'articles ici pour chaque nouvelle avancée -->
-
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Si vous avez des questions ou des suggestions, n'hésitez pas à me contacter à l'adresse suivante : <a href="mailto:sauvignon.jacques7@gmail.com">sauvignon.jacques7@gmail.com</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Mon TIPE en MP2I au lycée Thiers. Tous droits réservés.</p>
-    </footer>
-
+    <div class="container">
+        <h1>Bienvenue sur mon projet personnel</h1>
+        <p>Découvrez mon projet et suivez son évolution.</p>
+        <a href="chronologie.html" class="button">Voir la chronologie</a>
+    </div>
 </body>
 </html>
