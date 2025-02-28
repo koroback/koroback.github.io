@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avancées du Projet</title>
+    <title>Chronologie du Projet</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
         .timeline {
             position: relative;
             max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            margin: 0 auto;
         }
-
         .timeline::after {
             content: '';
             position: absolute;
@@ -26,90 +25,107 @@
             top: 0;
             bottom: 0;
             left: 50%;
-            transform: translateX(-50%);
-            z-index: 0;
+            margin-left: -3px;
         }
-
-        .post {
-            padding: 20px;
+        .container {
+            padding: 10px 40px;
             position: relative;
-            background-color: #fff;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 40%; /* Réduction pour éviter qu'ils débordent */
-            z-index: 1;
+            width: 50%;
         }
-
-        .post::after {
+        .container::after {
             content: '';
             position: absolute;
             width: 25px;
             height: 25px;
+            right: -17px;
             background-color: #fff;
             border: 4px solid #333;
-            top: 20px;
+            top: 15px;
             border-radius: 50%;
-            z-index: 2;
-    }
-
+            z-index: 1;
+        }
         .left {
-            left: 50%;
-}
-
-        .left::after {
-            left: 100%;
-            transform: translateX(-55%);
-}
-
+            left: 0;
+        }
         .right {
-            left: 55%;
-}
-
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #333;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #333;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #333;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #333 transparent transparent;
+        }
         .right::after {
-            right: 100%;
-            transform: translateX(-80%);
-}
-
-        .post img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-top: 10px;
+            left: -16px;
         }
-        .post h2 {
+        .content {
+            padding: 20px 30px;
+            background-color: #fff;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
             margin-top: 0;
-            color: #333;
         }
-        .post p {
-            color: #666;
+        time {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
     <div class="timeline">
-        <!-- Post 1 -->
-        <div class="post left">
-            <h2>Semaine du 10/02 - Début du Projet</h2>
-            <p>Ceci est le premier post pour montrer le début du projet. J'ai commencé par définir les objectifs et les étapes principales.</p>
-            <img src="image1.jpg" alt="Image du début du projet">
+        <div class="container left">
+            <div class="content">
+                <time>2023-10-01</time>
+                <h2>Lancement du projet</h2>
+                <p>Début des discussions et de la planification du projet.</p>
+            </div>
         </div>
-
-        <!-- Post 2 -->
-        <div class="post right">
-            <h2>Semaine du 17/////02 - Avancée Initiale</h2>
-            <p>J'ai terminé la première phase du projet. Voici une image pour illustrer les premiers résultats.</p>
-            <img src="image2.jpg" alt="Image de l'avancée initiale">
+        <div class="container right">
+            <div class="content">
+                <time>2023-11-15</time>
+                <h2>Phase de conception</h2>
+                <p>Élaboration des maquettes et des spécifications techniques.</p>
+            </div>
         </div>
-
-        <!-- Post 3 -->
-        <div class="post left">
-            <h2>Semaine du 24/02 - Milieu du Projet</h2>
-            <p>Nous sommes à mi-chemin. Voici une mise à jour avec quelques images et explications sur les progrès réalisés.</p>
-            <img src="image3.jpg" alt="Image du milieu du projet">
+        <div class="container left">
+            <div class="content">
+                <time>2024-01-10</time>
+                <h2>Développement initial</h2>
+                <p>Commencement du développement des fonctionnalités principales.</p>
+            </div>
         </div>
-
-        <!-- Ajoutez d'autres posts ici -->
+        <div class="container right">
+            <div class="content">
+                <time>2024-03-01</time>
+                <h2>Tests et validation</h2>
+                <p>Phase de tests pour identifier et corriger les bugs.</p>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres étapes ici -->
     </div>
 
 </body>
