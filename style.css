@@ -1,5 +1,10 @@
 body {
-  background-color: white;
+  background-image: url('https://pbs.twimg.com/profile_images/613083490163277828/MDkdUlNM_400x400.jpg'); /* Remplace par le chemin de ton image */
+  background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 100vh; /* S'assure que le fond couvre toute la hauteur de l'écran */
+  margin: 0;
 }
 
 h1 {
