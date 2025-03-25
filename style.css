@@ -6,48 +6,47 @@ h1 {
   color: black;
   text-align: center;
 }
+
 h2 {
-  text-align: center; /* Centre le texte horizontalement */
-  width: 100%;        /* Permet au centrage de s'étendre sur toute la largeur */
+  text-align: center;
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 15px;
-  color: #EE9AE1;     /* Mauve élégant */
-  font-size: 35px;    /* Taille agréable */
-  text-transform: uppercase; /* Titre en majuscules */
-  letter-spacing: 2px; /* Espacement pour une meilleure lisibilité */
+  color: #D8BFD8; /* Lavande clair */
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
 .content {
-  background-color: #ffffff; /* Fond blanc pour contraster */
-  border: 2px solid #4CAF50; /* Bordure verte élégante */
-  border-radius: 15px; /* Coins arrondis */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  
-  max-width: 800px; /* Limite de largeur pour un rendu lisible */
-  width: 90%; /* Adaptatif sur petits écrans */
-  padding: 20px; /* Espace intérieur */
-  margin: 20px auto; /* Centrage horizontal */
-  text-align: center; /* Centrer le texte */
-  
-  /* Effet léger au survol */
+  background-color: #FAF0FF; /* Fond mauve très clair */
+  border: 2px solid #BA55D3; /* Bordure mauve foncé */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
   transition: transform 0.3s ease-in-out;
   font-size: 22px;
 }
 
 .content:hover {
-  transform: scale(1.02); /* Zoom léger au survol */
+  transform: scale(1.02);
 }
 
 p {
-  font-family: verdana;
+  font-family: Verdana, sans-serif;
   font-size: 20px;
 }
 
 .menu-container {
   display: flex;
-  background-color: #4CAF50; /* Vert élégant */
-  border-radius: 12px; /* Coins arrondis */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  overflow: hidden; /* Assure les bords arrondis propres */
+  background-color: #9370DB; /* Violet moyen */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .menu-item {
@@ -58,35 +57,34 @@ p {
 
 .menu-item a {
   text-decoration: none;
-  color: #fff; /* Texte blanc */
+  color: #fff;
   font-weight: bold;
-  text-transform: uppercase; /* Majuscules pour plus d'élégance */
+  text-transform: uppercase;
   letter-spacing: 1px;
-  display: block; /* Rendre les liens cliquables sur toute la zone */
+  display: block;
 }
 
 .menu-item:hover {
-  background-color: #45a049; /* Vert plus foncé au survol */
-  transform: scale(1.1); /* Effet de zoom léger */
+  background-color: #8A2BE2; /* Violet plus foncé au survol */
+  transform: scale(1.1);
 }
 
 .menu-item:active {
-  background-color: #3e8e41; /* Vert plus foncé en cas de clic */
+  background-color: #7B68EE; /* Bleu-violet foncé au clic */
 }
 
 @media (max-width: 768px) {
   .menu-container {
-      flex-direction: column; /* Menu vertical sur petits écrans */
-      width: 100%; /* Pleine largeur */
+      flex-direction: column;
+      width: 100%;
   }
-
   .menu-item {
       padding: 12px 0;
   }
 }
 
 .problematique {
-  color: #e53935;  /* Rouge vif pour attirer l'attention */
-  font-size: 27px;  /* Taille de police légèrement augmentée */
-  font-weight: bold; /* Texte en gras pour souligner l'importance */
+  color: #9400D3;  /* Violet intense pour attirer l'attention */
+  font-size: 27px;
+  font-weight: bold;
 }
