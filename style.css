@@ -1,10 +1,5 @@
 body {
-  background-image: url('https://i.pinimg.com/280x280_RS/2a/79/02/2a79025b68cc3958192bca75d2251a22.jpg'); /* Remplace par le chemin de ton image */
-  background-size: cover; /* Ajuste l'image pour couvrir toute la page */
-  background-position: center; /* Centre l'image */
-  background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  height: 100vh; /* S'assure que le fond couvre toute la hauteur de l'écran */
-  margin: 0;
+  background-color: white;
 }
 
 h1 {
