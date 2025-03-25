@@ -1,54 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIPE</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #ffffff;
-            transition: background-color 0.05s ease, color 0.05s ease;
-        }
-        .container {
-            padding: 50px;
-        }
-        .button {
-            display: inline-block;
-            padding: 15px 25px;
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            background-color: #ae4dde;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Axel Bertholet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-<body>    
-    <div class="container">
-        <h1>Mon TIPE</h1>
-        <p>ici sera renseigné l'évolution de mon TIPE en mp2i au lycée Thiers</p>
-        <a href="sujet.html" class="button">Présentation du sujet</a>
-        <a href="chronologie.html" class="button">Voir la chronologie</a>
-    </div>
-
-    <script>
-        let isBlack = false;
-        
-        setInterval(() => {
-            document.body.style.backgroundColor = isBlack ? "white" : "black";
-            document.body.style.color = isBlack ? "black" : "white"; // Changer la couleur du texte aussi
-            isBlack = !isBlack;
-        }, 1000);
-    </script>
-
+<body>
+  <h1>Axel Bertholet</h1>
+  <div class="menu-container">
+    <div class="menu-item"><a href="index.html">Accueil</a></div>
+    <div class="menu-item"><a href="semaines.html#semaine1">Semaine 1</a></div>
+    <div class="menu-item"><a href="semaines.html#semaine2">Semaine 2</a></div>
+    <div class="menu-item"><a href="semaines.html#semaine3">Semaine 3</a></div>
+    <div class="menu-item"><a href="semaines.html#semaine4">Semaine 4</a></div>
+    <div class="menu-item"><a href="semaines.html#semaine5">Semaine 5</a></div>
+  </div>
+</div>
 </body>
 </html>
