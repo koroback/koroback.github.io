@@ -56,6 +56,43 @@
     c'est pour cela que je pensais étudier les propriétés des pliages de fractales dans un cas plus général, peut être repérer des cycles d'attractions selon certaines propriétés mais cela semble hasardeux, je n'ai aucune idée de si je trouverai
     une applicaiton mathématique intéressante. Je me suis donc renseigné et je suis tombé sur un article de pliage qui a attiré mon attention, cependant il parait bien trop complexe, je vais essayer de le comprendre pendant les vacances.<br>
   </div>
+
+   <h2 id="vacanes">vacances</h2>
+  <div class="content">
+    Après diverses recherches je me suis rendu compte de plusieurs problèmes majeurs :
+    1) Le sujet est très peu documenté et encore en recherche, la plupart des documents parlent de techniques peu rigoureuses à destination non scientifique
+    2) Plusieurs informations que j'ai trouvé se sont avérées fausses, le plus gros problème est que le théorème "toute forme polygonale est pliage en origami" est faux, il existe un théorème "toute forme polygonale est découpable en une seule coupe"
+    mais cela s'éloigne déjà des bases de mon sujet
+    3) Il n'y a donc pas d'algorithme universel de pliage de forme polygonale
+    4) Un pliage est très dur à modéliser, le modéliser par un graphe n'a jamais été fait à ma connaissance, bien que ce soit très certainement possible, la cherge de travail pour juste le faire s'avère très complexe et ayant un temps limité /
+    des problèmes à fixer ma problématique je pense que changer de sujet est plus pertinent.
+    D'ici découle le nouveau sujet de TIPE trouvé qui cette fois est réalisable pour sûr, je détaille mes avancées / problématique et plan dans le blog de la semaine suivante (pour rendre le site plus aéré à la lecture)
+  </div>
+
+  
+
+   <h2 id="semaine7">semaine 7</h2>
+  <div class="content">
+    En restant dans le thème du pliage cyclique, ma nouvelle problématique sera désormais :
+    <div class="problematique">Stocket de l'énergie par cycle de pliage, est-ce efficace ?</div><br>
+    Tout d'abord, on se basera sur un matériaux élastique mais non visco-élastique pour l'instant
+    Un pliage serait une flexion du matériau, un cycle de pliage est donc une succession de flexions effectuée de la même manière sur le même matériaux, les différents cycles de pliages seront expérimentés plus tard
+    Efficace = bon rendement pour l'instant
+    J'ai deux formules me permettant de modéliser l'énergie stockée dans une flexion et l'énergie dissipée à cette flexion (venant de la micro-plasticité engendrée par la flexion)
+    Ici le rendement sera donc calculé de la forme Estockée/(Estockée + Edissipée)
+    Le but est d'optimiser par divers paramètres le cycle afin d'avoir un rendement maximal théorique, pour ensuite l'appliquer à la réalité avec des valeurs de matériaux réelles ou des limites physiques (exemple : on ne peut pas plier indéfiniment un matériaux)
+    Les critères seront donc :
+      - La géométrie du matériaux
+      - Les paramètres du matériaux (angle maximum de flexion, Module de Young)
+      - La manière de plier (replier sur lui même ? Pli en éventail ?)
+    On se mettra dans diverses hypothèses pour l'instant :
+      - Les flexions ont une courbure constante (simplifiant largement les équations)
+      - Les flexions sont limitées à une certaine proportion du matériaux que nous définiront
+      - Le matériaux ne comporte pas de facteur visco-élastique donc la vitesse de flexion ne rentre pas en compte.
+    Le premier objectif serait d'avoir un modèle théorique du meilleur matériaux
+    Ensuite je pourrais confronter à des bases de données pour confirmer mon modèle
+    Puis je pourrais tester des astuces diverses comme les matériaux à mémoire de forme.
+  </div>
   
 </body>
 </html>
