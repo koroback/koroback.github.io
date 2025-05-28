@@ -109,9 +109,22 @@
     1 ) la somme des longueurs des plis doit etre inférieure ou égale à la taille totale (on visera l'égalité)<br>
     2 ) chaque angle (angle L/R, L : longueur du pli, R rayon de courbure constant) devra être inférieur à 180° afin de ne pas arriver dans des cas impossible, ici chaque pli peut être fait arbitrairement d'un côté ou l'autre,<br>
     il me parait intuitif que le pli sera techniquement faisable, mais il reste encore à le vérifier<br>
-    
   </p>
   </div>
+  
+  <h2 id="semaine8">semaine 9</h2>
+  <div class="content">
+    J'ai beaucoup avancés sur plusieurs points : 
+    1) J'ai formalisé mes formules, certaines étaient fausses mais maintenant tout à l'air de fonctionner de manière cohérente
+    2) J'ai tracé sur python deux quatres représentant le ratio (et sa dérivée) que je cherche à optimiser (Estockée/Edissipée) en faisant varier deux choses
+      a) en faisant varier seulement l'épaisseur de ma plaque, je remarque deux courbes asymptotiques avec une courbe de dérivée supérieure à la courbe initiale et explose bien avant
+      b) en faisant varier tous les R de manière uniforme, je aussi deux courbes asymptotiques, mais celles ci doivent attendre des valeurs monstrueuses avant d'exploser
+    3) Pour vérifier la cohérence de ma formule Estockée, j'ai tracé plusieurs courbes et leurs dérivées :
+      a) en faitsant varier l'épaisseur : je remarque deux courbes semblables à des polynômes du second degré, pour des petites valeurs dérivée > valeurs, mais après un certain moment valeurs croit bien plus vite et dépasse
+      b) en faisant varier tous les R : l'énergie stockée est décroissante tandis que la dérivée est croissante, les deux courbes admettent une asymptote horizontale et verticale en 0
+  </p>
+  </div>
+
   
 </body>
 </html>
